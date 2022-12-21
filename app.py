@@ -14,21 +14,90 @@ load_dotenv()
 
 
 machine = TocMachine(
-    states=["user", "state1", "state2"],
+    states=["user", "menu", "introduction","getlocation","findbar",
+            "select","select_high","select_med","select_low","taxi"],
     transitions=[
         {
             "trigger": "advance",
             "source": "user",
-            "dest": "state1",
-            "conditions": "is_going_to_state1",
+            "dest": "menu",
+            "conditions": "is_going_to_menu",
         },
         {
             "trigger": "advance",
-            "source": "user",
-            "dest": "state2",
-            "conditions": "is_going_to_state2",
+            "source": "menu",
+            "dest": "introduction",
+            "conditions": "is_going_to_introduction",
         },
-        {"trigger": "go_back", "source": ["state1", "state2"], "dest": "user"},
+        {
+            "trigger": "advance",
+            "source": "menu",
+            "dest": "getlocation",
+            "conditions": "is_going_to_getlocation",
+        },
+        {
+            "trigger": "advance",
+            "source": "menu",
+            "dest": "select",
+            "conditions": "is_going_to_select",
+        },
+        {
+            "trigger": "advance",
+            "source": "menu",
+            "dest": "taxi",
+            "conditions": "is_going_to_taxi",
+        },
+        {
+            "trigger": "advance",
+            "source": "introduction",
+            "dest": "menu",
+            "conditions": "is_going_to_backmenu",
+        },
+        {
+            "trigger": "advance",
+            "source": "getlocation",
+            "dest": "findbar",
+            "conditions": "is_going_to_findbar",
+        },
+        {
+            "trigger": "advance",
+            "source": "select",
+            "dest": "select_high",
+            "conditions": "is_going_to_select_high",
+        },
+        {
+            "trigger": "advance",
+            "source": "select",
+            "dest": "select_med",
+            "conditions": "is_going_to_select_med",
+        },
+        {
+            "trigger": "advance",
+            "source": "select",
+            "dest": "select_low",
+            "conditions": "is_going_to_select_low",
+        },
+        {
+            "trigger": "advance",
+            "source": "select_high",
+            "dest": "select",
+            "conditions": "is_going_to_backselect",
+        },
+        {
+            "trigger": "advance",
+            "source": "select_med",
+            "dest": "select",
+            "conditions": "is_going_to_backselect",
+        },
+        {
+            "trigger": "advance",
+            "source": "select_low",
+            "dest": "select",
+            "conditions": "is_going_to_backselect",
+        },
+        
+        {"trigger": "go_back", "source": ["findbar",
+            "select_high","select_med","select_low","taxi"], "dest": "menu"},
     ],
     initial="user",
     auto_transitions=False,
@@ -102,7 +171,10 @@ def webhook_handler():
             continue
         print(f"\nFSM STATE: {machine.state}")
         print(f"REQUEST BODY: \n{body}")
+        
+        print(f"event : {event}")
         response = machine.advance(event)
+        
         if response == False:
             send_text_message(event.reply_token, "Not Entering any State")
 
@@ -116,5 +188,5 @@ def show_fsm():
 
 
 if __name__ == "__main__":
-    port = os.environ.get("PORT", 8000)
+    port = os.environ.get("PORT", 5000)
     app.run(host="0.0.0.0", port=port, debug=True)
