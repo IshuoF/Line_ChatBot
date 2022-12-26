@@ -27,7 +27,7 @@ Python 3.6
 ![img](https://github.com/IshuoF/Line_ChatBot/blob/master/img/%E9%81%B8%E6%93%87%E6%BF%83%E5%BA%A6.jfif)
 ### 調酒製作:
 ![img](https://github.com/IshuoF/Line_ChatBot/blob/master/img/%E8%AA%BF%E9%85%92.jfif)
-### TTaxi:
+### Taxi:
 ![img](https://github.com/IshuoF/Line_ChatBot/blob/master/img/%E5%8F%AB%E8%BB%8A.jfif)
 
 ## FSM
