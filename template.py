@@ -5,20 +5,12 @@ main_menu = {
     "url": "https://www.grandcosmos.com.tw/wp-content/uploads/sites/214/2017/11/%E7%91%9E%E7%A9%97%E6%98%A5%E5%A4%A9%E5%9C%8B%E9%9A%9B%E8%A7%80%E5%85%89%E9%85%92%E5%BA%97-A%E6%A3%9F%E5%9F%8E%E5%A0%A1-%E5%A4%A7%E5%BB%B3%E9%85%92%E5%90%A7-2.jpg",
     "size": "full",
     "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "https://linecorp.com"
-    }
+    "aspectMode": "cover"
   },
   "body": {
     "type": "box",
     "layout": "vertical",
     "spacing": "md",
-    "action": {
-      "type": "uri",
-      "uri": "https://linecorp.com"
-    },
     "contents": [
       {
         "type": "text",
@@ -64,12 +56,7 @@ main_menu = {
               "text": "快速叫車"
             }
           }
-        ],
-        "action": {
-          "type": "message",
-          "label": "介紹與說明",
-          "text": "主選單"
-        }
+        ]
       }
     ]
   }
@@ -836,9 +823,9 @@ select_high = {
       "size": "mega",
       "hero": {
         "type": "image",
-        "url": "https://img.ixintu.com/upload/jpg/20210523/aac53c5976caaabcf6e6c69e7e2a7287_8936_512_512.jpg!ys",
+        "url": "https://img.88icon.com/download/jpg/20200905/38bf50ca892b3be864c8f9abfcc3cf8b_512_512.jpg!88con",
         "size": "full",
-        "aspectMode": "cover",
+        "aspectMode": "fit",
         "aspectRatio": "320:213"
       },
       "body": {
@@ -846,26 +833,31 @@ select_high = {
         "layout": "vertical",
         "contents": [
           {
+            "type": "box",
+            "layout": "vertical",
+            "contents": []
+          },
+          {
             "type": "button",
             "action": {
               "type": "message",
               "label": "返回選擇濃度",
               "text": "返回選擇濃度"
             }
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
+          },
           {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "返回主選單",
-              "text": "返回主選單"
-            }
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "返回主選單",
+                  "text": "返回主選單"
+                }
+              }
+            ]
           }
         ]
       }
@@ -1309,9 +1301,9 @@ select_med = {
       "size": "mega",
       "hero": {
         "type": "image",
-        "url": "https://img.ixintu.com/upload/jpg/20210523/aac53c5976caaabcf6e6c69e7e2a7287_8936_512_512.jpg!ys",
+        "url": "https://img.88icon.com/download/jpg/20200905/38bf50ca892b3be864c8f9abfcc3cf8b_512_512.jpg!88con",
         "size": "full",
-        "aspectMode": "cover",
+        "aspectMode": "fit",
         "aspectRatio": "320:213"
       },
       "body": {
@@ -1319,26 +1311,31 @@ select_med = {
         "layout": "vertical",
         "contents": [
           {
+            "type": "box",
+            "layout": "vertical",
+            "contents": []
+          },
+          {
             "type": "button",
             "action": {
               "type": "message",
               "label": "返回選擇濃度",
               "text": "返回選擇濃度"
             }
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
+          },
           {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "返回主選單",
-              "text": "返回主選單"
-            }
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "返回主選單",
+                  "text": "返回主選單"
+                }
+              }
+            ]
           }
         ]
       }
@@ -1492,9 +1489,9 @@ select_low ={
       "size": "mega",
       "hero": {
         "type": "image",
-        "url": "https://img.ixintu.com/upload/jpg/20210523/aac53c5976caaabcf6e6c69e7e2a7287_8936_512_512.jpg!ys",
+        "url": "https://img.88icon.com/download/jpg/20200905/38bf50ca892b3be864c8f9abfcc3cf8b_512_512.jpg!88con",
         "size": "full",
-        "aspectMode": "cover",
+        "aspectMode": "fit",
         "aspectRatio": "320:213"
       },
       "body": {
@@ -1502,26 +1499,31 @@ select_low ={
         "layout": "vertical",
         "contents": [
           {
+            "type": "box",
+            "layout": "vertical",
+            "contents": []
+          },
+          {
             "type": "button",
             "action": {
               "type": "message",
               "label": "返回選擇濃度",
               "text": "返回選擇濃度"
             }
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
+          },
           {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "返回主選單",
-              "text": "返回主選單"
-            }
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "返回主選單",
+                  "text": "返回主選單"
+                }
+              }
+            ]
           }
         ]
       }
@@ -1529,127 +1531,89 @@ select_low ={
   ]
 }
 
-recommend_menu = {
+Taxi_menu = {
   "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "Brown Store",
-        "weight": "bold",
-        "size": "xxl",
-        "margin": "md",
-        "action": {
-          "type": "message",
-          "label": "storename",
-          "text": " "
-        }
-      },
-      {
-        "type": "text",
-        "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
-        "size": "xs",
-        "color": "#aaaaaa",
-        "wrap": True,
-        "action": {
-          "type": "message",
-          "label": "address",
-          "text": " "
-        }
-      },
-      {
-        "type": "separator",
-        "margin": "xxl"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "margin": "xxl",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Energy Drink",
-                "size": "sm",
-                "color": "#555555",
-                "flex": 0
-              },
-              {
-                "type": "text",
-                "text": "$2.99",
-                "size": "sm",
-                "color": "#111111",
-                "align": "end"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Chewing Gum",
-                "size": "sm",
-                "color": "#555555",
-                "flex": 0
-              },
-              {
-                "type": "text",
-                "text": "$0.99",
-                "size": "sm",
-                "color": "#111111",
-                "align": "end"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Bottled Water",
-                "size": "sm",
-                "color": "#555555",
-                "flex": 0
-              },
-              {
-                "type": "text",
-                "text": "$3.33",
-                "size": "sm",
-                "color": "#111111",
-                "align": "end"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+  "hero": {
+    "type": "image",
+    "url": "https://vos.line-scdn.net/strapi-cluster-instance-bucket-84/1_b3cf937b14.jpeg",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover"
   },
   "footer": {
     "type": "box",
     "layout": "vertical",
+    "spacing": "sm",
     "contents": [
       {
         "type": "button",
+        "height": "md",
+        "action": {
+          "type": "uri",
+          "label": "打開 Line Taxi",
+          "uri": "https://page.line.me/LINETAXI?openQrModal=true"
+        }
+      },
+      {
+        "type": "button",
+        "height": "md",
         "action": {
           "type": "message",
           "label": "返回主選單",
           "text": "返回主選單"
         }
       }
-    ]
+    ],
+    "flex": 0
+  }
+}
+
+
+get_location ={
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://cdn-icons-png.flaticon.com/512/535/535137.png",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "fit"
   },
-  "styles": {
-    "footer": {
-      "separator": True
-    }
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "text": "傳送位置",
+        "size": "xxl",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "請按左下角 \" + \" 號 ，點擊位置資訊，",
+        "size": "sm"
+      },
+      {
+        "type": "text",
+        "text": "再點擊右上角分享",
+        "size": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "尋找酒吧",
+              "text": "找酒吧"
+            }
+          }
+        ]
+      }
+    ]
   }
 }
